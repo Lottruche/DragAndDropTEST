@@ -18,17 +18,18 @@
         <div class="face3 draggable"></div>
     </section>
 
-    <section id="S2">
-
-        <div class="div1"> </div>
-        <div class="div2"> </div>
-        <div class="div3"> </div>
-        <div class="div4"> </div>
-        <div class="div5"> </div>
-        <div class="div6"> </div>
-        <div class="div7"> </div>
-        <div class="div8"> </div>
-        <div class="div9"> </div>
+    <section id="S2" >
+        <div class="boxPuzzle">
+            <div class="div1"><img src="assets/Archibalte piano_4.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div2"><img src="assets/Archibalte piano_9.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div3"><img src="assets/Archibalte piano_2.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div4"><img src="assets/Archibalte piano_3.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div5"><img src="assets/Archibalte piano_7.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div6"><img src="assets/Archibalte piano_8.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div7"><img src="assets/Archibalte piano_1.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div8"><img src="assets/Archibalte piano_6.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div9"><img src="assets/Archibalte piano_5.jpg" alt="" class="draggablePuzzle"> </div>
+        </div>
 
     </section>
 
@@ -46,6 +47,19 @@
                 // options...
             });
             draggies.push(draggie);
+        }
+
+        var draggableElems = document.querySelectorAll('.draggablePuzzle');
+        // array of Draggabillies
+        var draggies = []
+        // init Draggabillies
+        for (var i = 0; i < draggableElems.length; i++) {
+            var draggableElem = draggableElems[i];
+            var draggie = new Draggabilly(draggableElem, {
+                /* options... */ 
+                grid: [480, 380] , containment: '.boxPuzzle'
+                });
+                 draggies.push(draggie);
         }
 
     </script>
