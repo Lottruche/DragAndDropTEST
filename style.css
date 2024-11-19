@@ -5,17 +5,17 @@
 #S1 {
     width: 100%;
     height: 100vh;
-    background-color: rgb(161, 198, 237);
+
+    background: linear-gradient(0deg, rgba(227,227,227,1) 0%, rgba(235,235,235,1) 81%, rgba(197,197,197,1) 95%);
 }
 
 .face1 {
     width: 30vh;
     height: 30vh;
     transform: scaleX(0.83) skewY(18deg);
-
     background-color: rgb(228, 237, 127);
     position: absolute;
-    left: 60vh;
+    left: 65vh;
     top: 40vh;
 }
 
@@ -35,18 +35,18 @@
     transform: scaleX(0.83) skewY(-18deg);
     background-color: rgb(127, 237, 138);
     position: absolute;
-    left: 80vh;
+    left: 90vh;
     top: 40vh;
 }
 
 .face3 {
-    width: 24.75vh;
-    height: 24.75vh;
+    width: 24.7vh;
+    height: 24.7vh;
     transform: rotate(45deg) skew(-23.5deg, -23.5deg);
     background-color: rgb(176, 127, 237);
     position: absolute;
-    left: 80vh;
-    top: 40vh;
+    left: 80.1vh;
+    top: 22.9vh;
 }
 
 
