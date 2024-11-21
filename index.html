@@ -18,17 +18,30 @@
         <div class="face3 draggable"></div>
     </section>
 
-    <section id="S2" >
+    <section id="S2">
         <div class="boxPuzzle">
-            <div class="div1"><img src="assets/Archibalte piano_4.jpg" alt="" class="draggablePuzzle"> </div>
-            <div class="div2"><img src="assets/Archibalte piano_9.jpg" alt="" class="draggablePuzzle"> </div>
-            <div class="div3"><img src="assets/Archibalte piano_2.jpg" alt="" class="draggablePuzzle"> </div>
-            <div class="div4"><img src="assets/Archibalte piano_3.jpg" alt="" class="draggablePuzzle"> </div>
-            <div class="div5"><img src="assets/Archibalte piano_7.jpg" alt="" class="draggablePuzzle"> </div>
-            <div class="div6"><img src="assets/Archibalte piano_8.jpg" alt="" class="draggablePuzzle"> </div>
-            <div class="div7"><img src="assets/Archibalte piano_1.jpg" alt="" class="draggablePuzzle"> </div>
-            <div class="div8"><img src="assets/Archibalte piano_6.jpg" alt="" class="draggablePuzzle"> </div>
-            <div class="div9"><img src="assets/Archibalte piano_5.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div1"><img src="./assets/Archibalte piano 900_11.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div2"><img src="./assets/Archibalte piano 900_2.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div3"><img src="./assets/Archibalte piano 900_14.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div4"><img src="./assets/Archibalte piano 900_19.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div5"><img src="./assets/Archibalte piano 900_12.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div6"><img src="./assets/Archibalte piano 900_13.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div7"><img src="./assets/Archibalte piano 900_20.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div8"><img src="./assets/Archibalte piano 900_18.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div9"><img src="./assets/Archibalte piano 900_15.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div10"><img src="./assets/Archibalte piano 900_16.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div11"><img src="./assets/Archibalte piano 900_1.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div12"><img src="./assets/Archibalte piano 900_5.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div13"><img src="./assets/Archibalte piano 900_6.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div14"><img src="./assets/Archibalte piano 900_3.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div15"><img src="./assets/Archibalte piano 900_8.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div16"><img src="./assets/Archibalte piano 900_10.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div17"><img src="./assets/Archibalte piano 900_17.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div18"><img src="./assets/Archibalte piano 900_9.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div19"><img src="./assets/Archibalte piano 900_4.jpg" alt="" class="draggablePuzzle"> </div>
+            <div class="div20"><img src="./assets/Archibalte piano 900_7.jpg" alt="" class="draggablePuzzle"> </div>
+        </div>
+
         </div>
 
     </section>
@@ -43,9 +56,10 @@
         for (var i = 0; i < draggableElems.length; i++) {
             var draggableElem = draggableElems[i];
             var draggie = new Draggabilly(draggableElem, {
-                // options...
+                /* options... */
             });
             draggies.push(draggie);
+
         }
 
         var draggableElems = document.querySelectorAll('.draggablePuzzle');
@@ -55,14 +69,14 @@
         for (var i = 0; i < draggableElems.length; i++) {
             var draggableElem = draggableElems[i];
             var draggie = new Draggabilly(draggableElem, {
-                /* options... */ 
-                grid: [480, 380] , containment: '.boxPuzzle'
-                });
-                 draggies.push(draggie);
+                /* options... */
+                grid: [180, 178], containment: '.boxPuzzle'
+            });
+            draggies.push(draggie);
         }
 
     </script>
-    
+
 </body>
 
 </html>
