@@ -48,35 +48,7 @@
 
 
     <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
-    <script>
-        var draggableElems = document.querySelectorAll('.draggable');
-        // array of Draggabillies
-        var draggies = []
-        // init Draggabillies
-        for (var i = 0; i < draggableElems.length; i++) {
-            var draggableElem = draggableElems[i];
-            var draggie = new Draggabilly(draggableElem, {
-                /* options... */
-            });
-            draggies.push(draggie);
-
-        }
-
-        var draggableElems = document.querySelectorAll('.draggablePuzzle');
-        // array of Draggabillies
-        var draggies = []
-        // init Draggabillies
-        for (var i = 0; i < draggableElems.length; i++) {
-            var draggableElem = draggableElems[i];
-            var draggie = new Draggabilly(draggableElem, {
-                /* options... */
-                grid: [180, 178], containment: '.boxPuzzle'
-            });
-            draggies.push(draggie);
-        }
-
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

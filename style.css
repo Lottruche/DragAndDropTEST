@@ -5,6 +5,9 @@
 #S1 {
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #dfd5bd;
 }
 
@@ -19,7 +22,7 @@
     cursor: grab;
 }
 
-.is-pointer-down.face1 {
+.face1.drag-Start {
     width: 34vh;
     height: 34vh;
     transform: scaleX(0.833) skewY(18deg);
@@ -33,6 +36,18 @@
     z-index: +1;
 }
 
+.face1.drag-End {
+    width: 30vh;
+    height: 30vh;
+    transform: scaleX(0.833) skewY(18deg);
+    background-color: rgb(83, 182, 91);
+    position: absolute;
+    left: 65vh;
+    top: 40vh;
+    cursor: grab;
+    transition: 0.70s;
+}
+
 .face2 {
     width: 30vh;
     height: 30vh;
@@ -44,7 +59,7 @@
     cursor: grab;
 }
 
-.is-pointer-down.face2 {
+.face2.drag-Start {
     width: 34vh;
     height: 34vh;
     transform: scaleX(0.833) skewY(-18deg);
@@ -58,6 +73,17 @@
     z-index: +1;
 }
 
+.face2.drag-End {
+    width: 30vh;
+    height: 30vh;
+    transform: scaleX(0.833) skewY(-18deg);
+    background-color: rgb(127, 237, 138);
+    position: absolute;
+    left: 90vh;
+    top: 40vh;
+    cursor: grab;
+    transition: 0.70s;
+}
 
 .face3 {
     width: 24.6vh;
@@ -70,7 +96,7 @@
     cursor: grab;
 }
 
-.is-pointer-down.face3 {
+.face3.drag-Start {
     width: 28.6vh;
     height: 28.65vh;
     transform: rotate(45deg) skew(-23.5deg, -23.3deg);
@@ -82,6 +108,18 @@
     transition: 0.15s;
     box-shadow: -10px 10px 35px rgba(68, 89, 56, 0.3);
     z-index: +1;
+}
+
+.face3.drag-End {
+    width: 24.6vh;
+    height: 24.65vh;
+    transform: rotate(45deg) skew(-23.5deg, -23.3deg);
+    background-color: rgb(108, 197, 116);
+    position: absolute;
+    left: 80.14vh;
+    top: 22.8vh;
+    cursor: grab;
+    transition: 0.70s;
 }
 
 #S2 {
