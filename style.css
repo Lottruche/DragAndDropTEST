@@ -20,6 +20,7 @@
     left: 65vh;
     top: 40vh;
     cursor: grab;
+    z-index: +1;
 }
 
 .face1.drag-Start {
@@ -33,7 +34,7 @@
     cursor: grabbing;
     transition: 0.15s;
     box-shadow: -10px 10px 35px rgba(68, 89, 56, 0.3);
-    z-index: +1;
+    z-index: +2;
 }
 
 .face1.drag-End {
@@ -46,6 +47,7 @@
     top: 40vh;
     cursor: grab;
     transition: 0.70s;
+    z-index: +1;
 }
 
 .face2 {
@@ -57,6 +59,7 @@
     left: 90vh;
     top: 40vh;
     cursor: grab;
+    z-index: +1;
 }
 
 .face2.drag-Start {
@@ -70,7 +73,7 @@
     cursor: grabbing;
     transition: 0.15s;
     box-shadow: -10px 10px 35px rgba(68, 89, 56, 0.3);
-    z-index: +1;
+    z-index: +2;
 }
 
 .face2.drag-End {
@@ -83,6 +86,7 @@
     top: 40vh;
     cursor: grab;
     transition: 0.70s;
+    z-index: +1;
 }
 
 .face3 {
@@ -94,6 +98,7 @@
     left: 80.14vh;
     top: 22.8vh;
     cursor: grab;
+    z-index: +1;
 }
 
 .face3.drag-Start {
@@ -107,7 +112,7 @@
     cursor: grabbing;
     transition: 0.15s;
     box-shadow: -10px 10px 35px rgba(68, 89, 56, 0.3);
-    z-index: +1;
+    z-index: +2;
 }
 
 .face3.drag-End {
@@ -120,6 +125,7 @@
     top: 22.8vh;
     cursor: grab;
     transition: 0.70s;
+    z-index: +1;
 }
 
 #S2 {
